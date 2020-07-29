@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <li class="">
+      <%= link_to 'User', user_path(current_user.id) %>
+    </li>
     <%= yield %>
   </body>
 </html>
