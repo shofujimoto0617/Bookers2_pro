@@ -1,0 +1,29 @@
+<div class="body">
+  <div class="container">
+  	<div class="row">
+  	  <div class="col-xs-9">
+  	    <h2>Books</h2>
+  	    <table class="table">
+  	      <thead>
+  	        <tr>
+  	          <th></th>
+  	          <th>Title</th>
+  	          <th>Option</th>
+  	          <th></th>
+  	        </tr>
+  	      </thead>
+  	      <tbody>
+  	      <% @books.each do |book| %>
+  	      	<tr>
+  	      	  <td></td>
+  	      	  <td><%= book.title %></td>
+  	      	  <td><%= book.body %></td>
+  	      	  <td></td>
+  	      	</tr>
+  	      <% end %>
+  	      </tbody>
+  	    </table>
+  	  </div>
+  	</div>
+  </div>
+</div>
