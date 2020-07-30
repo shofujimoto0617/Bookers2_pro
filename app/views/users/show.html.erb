@@ -1,17 +1,25 @@
-<h1>User info</h1>
-   <table class="table">
-   	<%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpg', fallback: "no_image.jpg" %>
-     <tbody>
-       <tr></tr>
-       <tr>
-         <th>name</th>
-         <th><%= @user.name %></th>
-       </tr>
-       <tr>
-         <th>introduction</th>
-         <th><%= @user.introduction %></th>
-       </tr>
-     </tbody>
-   </table>
+<div class="body">
+  <div class="container">
+  	<div class="row">
+  	  <div class="col-xs-3">
+  	  	<h1>User info</h1>
+        <table class="table">
+     	  <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpg', fallback: "no_image.jpg" %>
+           <tbody>
+             <tr></tr>
+             <tr>
+               <th>name</th>
+               <th><%= @user.name %></th>
+             </tr>
+             <tr>
+               <th>introduction</th>
+               <th><%= @user.introduction %></th>
+             </tr>
+           </tbody>
+         </table>
 
-   <%= link_to "#", edit_user_path(@user) %>
+         <%= link_to "#", edit_user_path(@user) %>
+      </div>
+    </div>
+  </div>
+</div>
