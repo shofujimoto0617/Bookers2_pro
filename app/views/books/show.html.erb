@@ -1,0 +1,21 @@
+<div class="body">
+  <div class="container">
+  	<div class="row">
+  	  <div class="col-xs-9">
+  	  	<h2>Book detail</h2>
+  	  	<table class="table">
+  	  	  <tbody>
+  	  	  	<tr>
+  	  	  	  <td>
+  	  	  	  	<%= attachment_image_tag @user, :profile_image, format: 'jpg',size:"40x40", fallback: "no_image.jpg" %><br>
+  	  	  	  	<%= @user.name %>
+  	  	  	  </td>
+  	  	      <td><%= @book.title %></td>
+  	  	      <td><%= @book.body %></td>
+  	  	    </tr>
+  	  	  </tbody>
+  	  	</table>
+  	  </div>
+  	</div>
+  </div>
+</div>
